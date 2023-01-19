@@ -21,6 +21,8 @@ p{
     font-family: Monocraft;
     src: url(/fonts/Monocraft.otf);
     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
