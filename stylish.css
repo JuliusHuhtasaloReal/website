@@ -50,10 +50,10 @@
 .link-buttons{
     text-align: center;
     text-decoration: none;
-    float: left;
-    display:inline-block;
+    display:block;
     background-color: #ff8906;
-    /*float: left;*/
+    /*float: left;
+    display: flex;*/
     width: 10%;
     margin-left: 9%;
     margin-right: 5%;
@@ -64,4 +64,31 @@
 .fa-linkedin {
     background: #007bb5;
     color: white;
-  }
+}
+
+.navbar {
+  background-color: #0f0e17;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 25px;
+}
+
+.navbar-brand {
+  margin-left: 25px;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #000;
+} 
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
