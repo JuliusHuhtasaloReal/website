@@ -45,6 +45,14 @@ nav{
     list-style: none;
     font-size: 1.5rem;
 }
+.nav_bar{
+    background-color: rgba(0, 0, 0, 0.850);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 2rem;
+    width: fit-content;
+    /*margin: auto;*/
+}
 a{
     color: #ff3535;
     text-decoration: none;
@@ -63,12 +71,15 @@ a:hover{
 }
 .logo{
     font-size: 2rem;
+    background-color: #000000e7;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 .logo:hover{
     cursor: default;
 }
 .main_profile_img{
-    filter: drop-shadow(0.7rem 0.3rem #686868);
+    filter: drop-shadow(0.7rem 0.3rem #000000ea);
 }
 /*Hamburger menu*/
 #hamburger_nav{
@@ -101,6 +112,7 @@ a:hover{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    border-radius: 2rem;
 }
 .menu_links a{
     display: block;
@@ -150,6 +162,14 @@ section{
     display: flex;
 }
 
+.section_start_text_container{
+    background-color: rgba(0, 0, 0, 0.850);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
 /* PROFILE SECTION */
 
 #profile{
@@ -158,6 +178,9 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+}
+.profile_section_details{
+    margin-bottom: 2rem;
 }
 .section_pic_container{
     display: flex;
@@ -260,15 +283,21 @@ section{
 .details_container{
     padding: 1.5rem;
     flex: 1;
-    background: #fff;
+    background-color: rgba(0, 0, 0);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
+.text_container{
+    background-color: #000000;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
 .section_container{
     gap: 4rem;
-    height: 80%;
+    height: 70%;
 }
 .section_pic_container{
     height: 400px;
@@ -291,6 +320,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
 .article_container{
@@ -324,8 +354,8 @@ article .icon{
 }
 .project_img{
     border-radius: 2rem;
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
 }
 
 .project_title{
@@ -334,7 +364,7 @@ article .icon{
 }
 .project_btn{
     color: #080808;
-    border-color: rgb(163, 163, 163);
+    border-color: rgb(77, 77, 77);
 }
 
 /* CONTACT */
@@ -355,6 +385,7 @@ article .icon{
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
+    background-color: #000000;
 }
 
 .contact_info_container{
@@ -376,8 +407,12 @@ article .icon{
 /* FOOTER SECTION */
 
 footer{
+    position: relative;
     height: 26vh;
     margin: 0 1rem;
+}
+.footer_bar{
+   margin: auto;
 }
 footer p{
     text-align: center;

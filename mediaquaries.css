@@ -6,6 +6,11 @@
     .about_containers{
         flex-wrap: wrap;
     }
+    .profile_section_details{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -39,6 +44,12 @@
         margin-top: 0;
     }
 }
+@media screen and (max-width: 850px){
+    .contact_info_upper_container{
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 600px){
     #contact, footer{
         height: 40vh;

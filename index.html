@@ -15,7 +15,7 @@
 
     <nav id="desktop_nav">
         <div class="logo">Julius Huhtasalo</div>
-        <div>
+        <div class="nav_bar">
             <ul class="nav_links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -45,9 +45,12 @@
             <img src="./assets/mallikuvaPyorea.png" alt="Julius Huhtasalo Profile Picture" class="main_profile_img">
         </div>
         <div class="section_text">
-            <p class="section__text_p1">Hello, I'm</p>
-            <h1 class="title">Julius Huhtasalo</h1>
-            <p class="section__text_p2">Software Developer / Future Engineer</p>
+            <div class="details_container profile_section_details">
+                <p class="section__text_p1">Hello, I'm</p>
+                <h1 class="title">Julius Huhtasalo</h1>
+                <p class="section__text_p2">Software Developer / Future Engineer</p>
+            </div>
+            
             <div class="btn_container">
                 <button class="btn btn_color_1" onclick="window.open('./assets/CV_Huhtasalo_Julius.pdf')">Download CV</button>
                 <button class="btn btn_color_1" onclick="location.href='./#contact'">Contact Info</button>
@@ -61,8 +64,10 @@
         </div>
     </section>
     <section id="about">
-        <p class="section__text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <div class="section_start_text_container">
+            <p class="section__text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+        </div>
         <div class="section_container">
             <div class="section_pic_container">
                 <img src="./assets/hattuJulle.png" alt="Profile Picture" class="about_pic main_profile_img">
@@ -75,7 +80,7 @@
                         <p>2+ Years <br>Software Development</p>
                     </div>
                     <div class="details_container">
-                        <img src="./assets/education.png" alt="education icon" class="icon contact_icon">
+                        <img src="./assets/icons8-group-48.png" alt="education icon" class="icon contact_icon">
                         <h3>Education</h3>
                         <p>Bachelor of Engineering, Information Technology (2nd year ongoing) <br>Graduated from Trade School</p>
                     </div>
@@ -88,50 +93,53 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#experience'">
     </section>
     <section id="experience">
-        <p class="section__text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <div class="section_start_text_container">
+            <p class="section__text_p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+        </div>
+        
         <div class="experience_details_container">
             <div class="about_containers">
                 <div class="details_container">
                     <h2 class="experience_sub_title">Frontend Development</h2>
                     <div class="article_container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>Css</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>C#</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>Python</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
@@ -143,21 +151,21 @@
                     <h2 class="experience_sub_title">Frontend Development</h2>
                     <div class="article_container">
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>HTML</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>Css</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <img src="./assets/icons8-checkmark-48.png" alt="checkmark icon" class="icon">
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Experienced</p>
@@ -170,8 +178,11 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href= '#projects'">
     </section>
     <section id="projects">
-        <p class="section__text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <div class="section_start_text_container">
+            <p class="section__text_p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+        </div>
+        
         <div class="experience_details_container">
             <div class="about_containers">
                 <div class="details_container color_container">
@@ -207,8 +218,11 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href= '#contact'">
     </section>
     <section id="contact">
-        <p class="section__text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <div class="section_start_text_container">
+            <p class="section__text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+        </div>
+
         <div class="contact_info_upper_container">
             <div class="contact_info_container">
                 <img src="./assets/email.png" alt="email icon" class="icon contact_icon email_icon">
@@ -225,7 +239,7 @@
         </div>
     </section>
     <footer>
-        <nav>
+        <nav class="footer_bar nav_bar">
             <div class="nav_links_container">
                 <ul class="nav_links">
                     <li><a href="#about">About</a></li>
@@ -233,9 +247,9 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <p>Copyright &#169; 2024 Julius Huhtasalo. All Rights Reserved.</p>
             </div>
         </nav>
-        <p>Copyright &#169; 2024 Julius Huhtasalo. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
