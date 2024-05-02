@@ -2,63 +2,244 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylish.css">
-    <!-- Link to Font awesome social media icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>MainPage</title>
-    <style>
-    .fa-linkedin{
-        background-color: #007bb5;
-        color: white;
-    }
-    </style>
-
+    <title>Julius Huhtasalo Portfolio</title>
+    <link rel="stylesheet" href="newStyle.css">
+    <link rel="stylesheet" href="mediaquaries.css">
 </head>
-<body class="body">
-
-    <nav class="navbar navbar-expand-md">
-        <a href="#" class="navbar-brand">Africa</a>
-        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="main-navigation" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+<body>
+    <nav id="desktop_nav">
+        <div class="logo">Julius Huhtasalo</div>
+        <div>
+            <ul class="nav_links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
-    <div class="main-box">
-        <img src="images/julli.jpg" alt="Julius" class="profile-img">
-        <a href="#" class="fa fa-linkedin"></a>
-        <div class="img-text-box">
-            <div class="h1">
-            <h1>Julius Huhtasalo</h1>
-            <h2>Student at Tampere University of Applied Science</h2>
+    <nav id="hamburger_nav">
+        <div class="logo">Julius Huhtasalo</div>
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            
-        </div>
-        <div>
-            <div class="link-buttons">
-                <a href="firsttehtava.html">Tests</a>
-                <a href="firsttehtava.html">Tests</a>         
-                <a href="firsttehtava.html">Tests</a>
-                <a href="firsttehtava.html">Tests</a>
+            <div class="menu_links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
-
-    </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/mallikuvaPyorea.png" alt="Julius Huhtasalo Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title">Julius Huhtasalo</h1>
+            <p class="section__text_p2">Software Developer / Future Engineer</p>
+            <div class="btn_container">
+                <button class="btn btn_color_2" onclick="window.open('./assets/CV_Huhtasalo_Julius.pdf')">Download CV</button>
+                <button class="btn btn_color_1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials_container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/julius-huhtasalo/'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/JuliusHuhtasaloReal'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="./assets/hattuJulle.png" alt="Profile Picture" class="about_pic">
+            </div>
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ Years <br>Juttui juttui development</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Ammattikoulu <br>Ammattikorkea meneillään</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis quam id blanditiis iusto tenetur nam alias exercitationem omnis accusamus earum deserunt deleniti et, hic pariatur neque laudantium unde quasi ab inventore voluptatibus, dolorem quidem quae. Minus dignissimos, tenetur esse numquam, nisi nobis nostrum totam quo deleniti voluptate doloribus possimus?</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_container">
+                    <h2 class="experience_sub_title">Frontend Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>Css</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details_container">
+                    <h2 class="experience_sub_title">Frontend Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>Css</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href= '#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/weatherPage.png" alt="Weather page image" class="project_img">
+                    </div>
+                    <h2 class="experience_sub_title project_title">Weather Page Project</h2>
+                    <div class="butn_container">
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='https://github.com/tite-5G00FY11/2023-wk14-final-project-JuliusHuhtasaloReal'">
+                            Github
+                        </button>
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='https://tite-5g00fy11.github.io/2023-wk14-final-project-JuliusHuhtasaloReal/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/project-1.png" alt="project 1" class="project_img">
+                    </div>
+                    <h2 class="experience_sub_title project_title">Project One</h2>
+                    <div class="butn_container">
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='https://Github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='https://Github.com'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color_container">
+                    <div class="article_container">
+                        <img src="./assets/project-1.png" alt="project 1" class="project_img">
+                    </div>
+                    <h2 class="experience_sub_title project_title">Project One</h2>
+                    <div class="butn_container">
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='https://Github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='https://Github.com'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href= '#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_upper_container">
+            <div class="contact_info_container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact_icon email_icon">
+                <p><a href="mailto:julius.huhtasalo@gmail.com">julius.huhtasalo@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact_icon">
+                <p><a href="https://www.linkedin.com/in/julius-huhtasalo/">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav_links_container">
+                <ul class="nav_links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Julius Huhtasalo. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
