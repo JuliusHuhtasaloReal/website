@@ -5,5 +5,5 @@ function toggleMenu(){
     icon.classList.toggle("open");
 }
 var video = document.getElementById("backgroundVideo");
-video.playbackRate = 0.85;
+video.playbackRate = 0.65;
 
