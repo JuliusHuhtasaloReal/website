@@ -1,7 +1,4 @@
 # website
-school website training lulws
+school website training
 
-Reminders:
-git merge origin/main // To get new files from repository to computer
-Next test
-git fetch -p origin
+https://juliushuhtasaloreal.github.io/website/
