@@ -4,3 +4,6 @@ function toggleMenu(){
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+var video = document.getElementById("backgroundVideo");
+video.playbackRate = 0.85;
+
