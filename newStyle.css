@@ -49,16 +49,15 @@ nav{
     /*margin: auto;*/
 }
 a{
-    color: #ff3535;
+    color: #ffffff;
     text-decoration: none;
-    text-decoration-color: #cb3737;
+    text-decoration-color: #e94747;
 }
 a:hover{
-    color: #ee6f57;
+    color: #e94747;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: #f7f7f7;
-    filter: drop-shadow(0.1rem 0.1rem #000000);
+    text-decoration-color: #ffffff;
 }
 #desktop_nav{
     position: relative;
