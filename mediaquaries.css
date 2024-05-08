@@ -32,9 +32,11 @@
     section, .section_container{
         height: fit-content;
     }
+    /*
     section{
         margin: 0 5%;
     }
+    */
     .section_pic_container{
         width: 275px;
         height: 275px;
@@ -42,6 +44,10 @@
     }
     .about_containers{
         margin-top: 0;
+    }
+    .project_img{
+        height: 75%;
+        width: 75%;
     }
 }
 @media screen and (max-width: 850px){
