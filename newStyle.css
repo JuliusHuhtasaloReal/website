@@ -14,12 +14,15 @@ body{
     position: fixed;
     min-width: 100%;
     min-height: 100%;
+    right: 0;
+    bottom: 0;
 }
 html{
     scroll-behavior: smooth;
 }
 p{
     color: #adadad;
+    filter: drop-shadow(0.01rem 0.1rem #ffffff);
 }
 
 a, 
@@ -72,7 +75,7 @@ a:hover{
     cursor: default;
 }
 .main_profile_img{
-    filter: drop-shadow(0.7rem 0.3rem #000000ea);
+    filter: drop-shadow(0.7rem 0.3rem #38383844);
 }
 /*Hamburger menu*/
 #hamburger_nav{
@@ -101,7 +104,7 @@ a:hover{
     z-index: 1;
     top: 100%;
     right: 0%;
-    background-color: #080808;
+    background-color: #383838bf;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -157,11 +160,13 @@ section{
 }
 
 .section_start_text_container{
-    background-color: rgba(0, 0, 0, 0.850);
+    background-color: #383838bf;
     width: fit-content;
     margin-inline: auto;
     padding: 1.5rem;
     border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: #C0C0C0;
 }
 
 /* PROFILE SECTION */
@@ -201,6 +206,7 @@ section{
 .title{
     font-size: 3rem;
     text-align: center;
+    filter: drop-shadow(0.4rem 0.45rem #212344);
 }
 #socials_container{
     display: flex;
@@ -228,21 +234,26 @@ section{
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    
 }
 .btn_color_1:hover{
     cursor: pointer;
 }
 .btn_color_1{
-    background: #000000d2;
-    color: #fff;
+    background: #212344;
+    
 }
 .btn_color_1:hover{
-    background: rgb(89, 89, 89);
+    background: #595959;
 }
 
 /* ABOUT SECTION */
 #about{
     position: relative;
+}
+.aboutme_box_titles{
+    filter: drop-shadow(0.1rem 0.3rem #212344);
+    font-size: larger;
 }
 .about_containers{
     gap: 2rem;
@@ -267,14 +278,14 @@ section{
 .details_container{
     padding: 1.5rem;
     flex: 1;
-    background-color: rgba(0, 0, 0);
+    background-color: #383838;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border-color: #C0C0C0;
     text-align: center;
 }
 .text_container{
-    background-color: #000000;
+    background-color: #383838;
     padding: 1.5rem;
     border-radius: 2rem;
     margin-top: 1rem;
@@ -298,6 +309,7 @@ section{
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+    filter: drop-shadow(0.4rem 0.5rem #212344);
 }
 
 .experience_details_container{
@@ -331,25 +343,27 @@ article .icon{
 
 #projects{
     position: relative;
-    height: fit-content;
+    /*height: fit-content;*/
 }
 .color_container{
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: #383838e7;
 }
 .project_img{
     border-radius: 2rem;
     width: 40%;
-    height: 60%;
+    height: 40%;
+    filter: drop-shadow(0 0 0.5rem #ffeaea);
 }
 
 .project_title{
     margin: 1rem;
-    color: #080808;
+    color: #ffffff;
+    filter: drop-shadow(0.3rem 0.4rem #212344);
+    
 }
 .project_btn{
     color: #ffffff;
-    border-color: rgba(0, 0, 0, 0.905);
 }
 
 /* CONTACT */

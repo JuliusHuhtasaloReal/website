@@ -32,15 +32,20 @@
     section, .section_container{
         height: fit-content;
     }
-    /*
+    
     section{
-        margin: 0 5%;
+        /*margin: 0 5%;*/
+        padding-bottom: 5vh;
     }
-    */
+    #contact{
+        padding-bottom: 0;
+        height: 70vh;
+    }
     .section_pic_container{
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
+        margin-inline: auto;
+        margin-block: 1.5rem;
     }
     .about_containers{
         margin-top: 0;
