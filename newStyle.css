@@ -262,6 +262,8 @@ section{
     position: absolute;
     right: -5rem;
     bottom: 2,5rem;
+    filter: drop-shadow(0.1rem 0.2rem #8a8a8abe);
+    border-radius: 50%;
 }
 .details_container{
     padding: 1.5rem;
