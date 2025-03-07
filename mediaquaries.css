@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     #desktop_nav{
         display: none;
     }
@@ -32,7 +32,6 @@
     section, .section_container{
         height: fit-content;
     }
-    
     section{
         /*margin: 0 5%;*/
         padding-bottom: 5vh;
@@ -40,6 +39,12 @@
     #contact{
         padding-bottom: 0;
         height: 70vh;
+    }
+    .contact_info_upper_container{
+        width: clamp(20rem, 90%, 50rem);
+    }
+    .contact_info_container p{
+        font-size: clamp(1rem, 0.1rem + 1.4545vw, 2rem);
     }
     .section_pic_container{
         width: 275px;
@@ -55,10 +60,27 @@
         width: 75%;
     }
 }
+@media screen and (max-width: 1150px){
+    .contact_info_container p{
+        font-size: clamp(1rem, 0.1rem + 1.4545vw, 2rem);
+    }
+
+}
 @media screen and (max-width: 850px){
     .contact_info_upper_container{
         flex-wrap: wrap;
     }
+    .title{
+        font-size: clamp(0.75rem, -0.4773rem + 6.5455vw, 3rem);
+    }
+    .section__text_p2{
+        font-size: clamp(0.6rem, 0.3409rem + 2.1818vw, 1.75rem);
+    }
+    .profile_section_details{
+        height: clamp(1rem, 50%, 11.5rem);   
+    }
+    
+    
 }
 
 @media screen and (max-width: 600px){
@@ -76,11 +98,21 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
+    .profile_section_details{
+        padding-bottom: 0rem;
+    }
     .about_containers, .contact_info_upper_container, .btn_container{
         flex-wrap: wrap;
     }
+    .contact_info_upper_container{
+        max-width: 80%;
+        min-width: 50px;
+    }
     .contact_info_container{
         margin: 0;
+    }
+    .contact_info_container p{
+        display: none;
     }
     .contact_info_container p, .nav_links li a{
         font-size: 1rem;

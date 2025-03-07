@@ -179,6 +179,8 @@ section{
     height: 80vh;
 }
 .profile_section_details{
+    width: 45rem;
+    height: 11.5rem;
     margin-bottom: 2rem;
 }
 .section_pic_container{
@@ -240,11 +242,11 @@ section{
     cursor: pointer;
 }
 .btn_color_1{
-    background: #212344;
+    background: #595959;
     
 }
 .btn_color_1:hover{
-    background: #595959;
+    background: #e94747;
 }
 
 /* ABOUT SECTION */
@@ -329,9 +331,9 @@ section{
 }
 
 article{
-    width: 10rem;
+    width: 13rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     gap: 0.5rem;
 }
 
@@ -378,6 +380,7 @@ article .icon{
 .contact_info_upper_container{
     display: flex;
     justify-content: center;
+    width: 80%;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.2rem solid;
     border-color: rgb(163, 163, 163);
