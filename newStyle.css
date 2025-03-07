@@ -5,6 +5,7 @@ body{
     font-family: "Poppins", sans-serif;
     background: #fff;
     color: #ffffff;
+    width:fit-content;
 }
 *{
     margin: 0;
