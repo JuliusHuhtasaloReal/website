@@ -6,7 +6,7 @@ body{
     background: #fff;
     color: #ffffff;
     width:fit-content;
-    min-width: 599px;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
