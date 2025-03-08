@@ -128,6 +128,9 @@
         gap: 0.5rem;
         text-align: center;
     }
+    section{
+        margin: 0 1rem;
+    }
     .section_pic_container{
         width: auto;
         height: 46vw;
